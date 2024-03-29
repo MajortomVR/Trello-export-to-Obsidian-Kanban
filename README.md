@@ -7,14 +7,13 @@ This project is a command-line tool for exporting Trello boards including all at
 - [Installation](#installation)
 - [Usage](#usage)
 - [Examples](#examples)
-- [License](#license)
+- [Notes](#notes)
 
 
 ## Information
-Board on Trello.com
 | Board on Trello.com | Board exported in Obsidian - Kanban |
 | :---: | :---: |
-| ![Trello - Board](screenshots/trello_native_example.png) | ![Exported Board in Obsidian Kanban](screenshots/obsidian_kanban_export_example.png) |
+| ![Trello - Board](screenshots/trello_native_example_small.jpg) | ![Exported Board in Obsidian Kanban](screenshots/obsidian_kanban_export_example_small.jpg) |
 
 ## Installation
 1. Clone the repository to your local machine:
@@ -47,7 +46,7 @@ python main.py <api_key> <api_token> <board_id>
 ```
 
 
-## Information
+## Notes
 Output structure:
 ```
 Export structure
