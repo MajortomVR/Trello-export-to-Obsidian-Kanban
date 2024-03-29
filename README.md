@@ -25,7 +25,7 @@ This project is a command-line tool for exporting Trello boards including all at
 1. Obtain your Trello API key and token from the Trello Developer website.
 2. Run the tool with the following command, providing your API key and token:
     ```
-    python main.py <api_key> <api_token> [board_id]
+    python export_trello_board.py <api_key> <api_token> [board_id]
     ```
     - Replace <api_key> and <api_token> with your Trello API key and token, respectively.
     - Optionally, specify a Trello board ID (or URL) to export a specific board. If omitted, the tool will list all available boards.
@@ -37,12 +37,12 @@ This project is a command-line tool for exporting Trello boards including all at
 ## Examples
 List all available Trello boards:
 ```
-python main.py <api_key> <api_token>
+python export_trello_board.py <api_key> <api_token>
 ```
 
 Export a specific Trello board:
 ```
-python main.py <api_key> <api_token> <board_id>
+python export_trello_board.py <api_key> <api_token> <board_id>
 ```
 
 
