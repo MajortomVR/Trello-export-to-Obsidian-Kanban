@@ -34,7 +34,7 @@ def write_file(file_path: str, file_content: str) -> None:
         file_path (str): The path of the file to write to.
         file_content (str): The contents to write to the file.
     """
-    with open(file_path, 'w') as file:
+    with open(file_path, 'w', encoding='utf-8') as file:
         file.write(file_content)
 
 
@@ -48,7 +48,7 @@ def read_file(file_path: str) -> str:
     Returns:
         str: The contents of the file.
     """
-    with open(file_path, 'r') as file:
+    with open(file_path, 'r', encoding='utf-8') as file:
         return file.read()
       
       
@@ -60,8 +60,8 @@ def write_file_json(file_path: str, data: Any) -> None:
         file_path (str): The path of the JSON file to write to.
         data (any): The data to write to the JSON file.
     """
-    with open(file_path, 'w') as file:         
-        file.write( json.dumps(data) )
+    with open(file_path, 'w', encoding='utf-8') as file:
+        file.write( json.dumps(data, ensure_ascii=False) )
    
    
 def read_file_json(file_path: str) -> Any:
@@ -74,5 +74,5 @@ def read_file_json(file_path: str) -> Any:
     Returns:
         any: The data read from the JSON file.
     """
-    with open(file_path, 'r') as file:
+    with open(file_path, 'r', encoding='utf-8') as file:
         return json.load(file)
